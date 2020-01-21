@@ -1,15 +1,22 @@
 # language: pt
-Funcionalidade: Calcular diferentes tipos de triangulos
-  Eu, como usuario da calculadora de triangulos,
-  quero realizar os calculos dos mais variados 
-  tipos de triangulos
 
-Contexto: Acessar aplicacao
-	Dado que acessei a aplicacao
+Funcionalidade: Calcular diferentes tipos de triângulos
+  Eu, como usuário da calculadora de triângulos,
+  quero realizar os cálculos dos mais variados 
+  tipos de triângulos
 
-Esquema do Cenario: Calculo de Triangulos
+Contexto: Acessar aplicação
+	Dado que acessei a aplicação
+
+Cenario: Valores inválidos
+	Quando eu não informar os valores dos lados
+	E calcular os lados do triângulo
+	Entao a mensagem "Preencha todos os lados" será exibida
+
+Esquema do Cenario: Cálculo de Triângulos
 	Quando eu informar os valores do lado1 <lado1>, lado2 <lado2> e lado3 <lado3>
-  Entao o Triangulo <nome> sera calculado
+	E calcular os lados do triângulo
+  Entao o <nome> será calculado
   
 Exemplos:
 | lado1 | lado2 | lado3 | nome                   |
